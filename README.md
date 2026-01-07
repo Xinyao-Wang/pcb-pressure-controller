@@ -51,20 +51,13 @@ The valve drive stage is adaptable to valves with different voltage requirements
 
 ## Repository Contents
 
-schematic.pdf – Full schematic (PDF)
-layout.pdf – PCB layout view
-pcb_top.jpg – Assembled board (top)
-pcb_bottom.jpg – Assembled board (bottom)
-
-eagle/
-├─ pressure_controller.sch – EAGLE schematic
-└─ pressure_controller.brd – EAGLE board layout
-
-CAMOutputs/ – Gerbers and CAM-generated files
-BOM.csv – Bill of materials
-Assembly.csv – Assembly data
-top.csv / bottom.csv – Pick-and-place outputs
-
+- schematic.pdf — Full schematic
+- layout.pdf — PCB layout
+- pcb_top.jpg — Assembled board (top)
+- pcb_bottom.jpg — Assembled board (bottom)
+- eagle/ — EAGLE schematic and board files
+- CAMOutputs/ — Gerbers
+- BOM.csv — Bill of materials
 
 ## Design Ownership
 

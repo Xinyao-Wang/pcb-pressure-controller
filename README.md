@@ -20,7 +20,7 @@ The system was designed to work with a BeagleBone Black as the host controller.
 - **Solution:** TCA9548A I2C multiplexer
   - Supports up to 8 channels
   - Configured at address `0x70`
-  - Allows multiple identical sensors on a single I2C bus :contentReference[oaicite:0]{index=0}
+  - Allows multiple identical sensors on a single I2C bus
 
 **Electrical details:**
 - I2C pull-up resistors: 1.8 kΩ on the main bus
@@ -32,7 +32,7 @@ The system was designed to work with a BeagleBone Black as the host controller.
 - **Actuators:** 5 V solenoid valves
 - **Driver:** ULN2803A Darlington transistor array
   - Used to sink valve current beyond GPIO capability
-  - Protects the controller from inductive loads :contentReference[oaicite:1]{index=1}
+  - Protects the controller from inductive loads
 
 ### Manual Control and Indicators
 - Push-button switches for manual valve actuation
@@ -51,3 +51,25 @@ The valve drive stage is adaptable to valves with different voltage requirements
 
 ## Repository Contents
 
+schematic.pdf – Full schematic (PDF)
+layout.pdf – PCB layout view
+pcb_top.jpg – Assembled board (top)
+pcb_bottom.jpg – Assembled board (bottom)
+
+eagle/
+├─ pressure_controller.sch – EAGLE schematic
+└─ pressure_controller.brd – EAGLE board layout
+
+CAMOutputs/ – Gerbers and CAM-generated files
+BOM.csv – Bill of materials
+Assembly.csv – Assembly data
+top.csv / bottom.csv – Pick-and-place outputs
+
+
+## Design Ownership
+
+I designed the schematic, PCB layout, pressure sensing architecture, and valve driver circuitry, and validated the board in experimental PAM control setups.
+
+## Notes
+
+This PCB was designed for experimental reliability, with clear separation between sensing, actuation, and power domains, and with features added to simplify bring-up and debugging.
